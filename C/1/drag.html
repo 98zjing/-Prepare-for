@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div drageebie="true">2222</div>
+	<style>
+		div.nth-child(1){
+			width: 40px;
+			height: 40px;
+			background: red;}
+		div.nth-child(2){
+			width: 500px;
+			height: 500px;
+			border: 1px solid #000;
+		}
+	</style>
+	<script>
+		var obj = document.querySelector("div.nth-child(1)");
+		 obj.ondragstart = function (){
+			console.log(22);
+		}
+		// obj.
+	</script>
+</body>
+</html>

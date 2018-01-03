@@ -1,0 +1,87 @@
+@media screen and (max-width: 850px){
+	.listLeft,
+	.navRight,
+	.nav{
+		display: none;
+	}
+	.list .listRight,
+	.list,
+	.navLeft{
+		width: 100%;
+	}
+	.nav ul,
+	.Cable>.CableBtn,
+	.brand div,
+	.header {
+		width: 80%;
+	}
+	.bannerImg>.bannerBox a li img{
+		margin-left: 50%;
+	}
+	.banner::after{
+		left: 70%;
+	}
+	.banner::before{
+		left: 40%;
+	}
+	.list{
+		padding: 20px;
+	}
+	.menu{
+		display: block;
+	}
+	#aside_btn{
+		display: none;
+	}
+}
+@media screen and (max-width: 550px){
+	.listLeft,
+	.navRight,
+	.nav,
+	.banner,
+	.brand{
+		display: none;
+	}
+	.list .listRight,
+	.list,
+	.navLeft{
+		width: 100%;
+	}
+	.nav ul,
+	.Cable>.CableBtn,
+	.brand div,
+	.header {
+		width: 80%;
+	}
+	.Cable>.CableBtn{
+		text-align: center;
+	}
+	.listRH ul.listBannerList a li{
+		width: 25%;
+	}
+	.content{
+	}
+	.listRH .listBanner ul.listBannerList{
+		width: 400%;
+	}
+	.listRH .listBanner ul{
+		display: block;
+	}
+	.introduce .buy{
+		float: none;
+		width: 50%;
+		height: 100%;
+		margin: 0;
+		margin:0 auto;
+		border-radius: 10px;
+	}
+	.introduce p{
+		display: none;
+	}
+	.menu{
+		display: block;
+	}
+	#aside_btn{
+		display: block;
+	}
+}

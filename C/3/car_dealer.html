@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Car Dealer</title>
+	<link rel="stylesheet" href="dealer.css" type="text/css" />
+	<script type="text/javascript" src="JQuery/jquery-2.1.1.js"></script>
+<script type="text/javascript" src="JQuery/jquery-ui.js"></script>
+
+    <script type="text/javascript" language="javascript" src="dealer.js"></script>
+</head>
+
+<body>
+	<div id="salon">
+    	<div id="clients_queue" style="overflow: auto;">
+        	clients queue
+        </div>
+    	<div id="cars_place">
+        	<div id="porsche" class="place" data-prod="Porsche" data-html="3"  data-money="555.00">
+			Place for Porsche cars
+            </div>
+        	<div id="volkswagen" class="place" data-prod="Volkswagen" data-html="4" data-money="555.00">
+			Place for Volkswagen cars
+            </div>
+        	<div id="audi" class="place" data-prod="Audi" data-html="6"  data-money="555.00">
+			Place for Audi cars
+            </div>
+        	<div id="bmw" class="place" data-prod="BMW" data-html="4"  data-money="555.00">
+			Place for BMW cars
+            </div>
+        </div>
+        <div id="cashier">
+        	cashier
+        </div>
+        <div id="exit">
+        	exit
+        </div>
+        <div id="display">
+        	<ul>
+            	<li id="clients_served">0 clients</li>
+				<li id="cars_sold">0 cars</li>
+                <li id="amount">€ 0.000,00</li>
+            </ul>    
+        </div>
+    </div>
+    <div class="mask" style="display: none;">
+        <div>
+            <p>A you ok?</p>
+            <button id="Yes">Yes</button>
+            <button id="No">NO</button>
+        </div>
+    </div>
+    <style>
+        div.mask{
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top:0;
+            left: 0;
+            background-color: rgba(100,100,100,0.2);
+        }
+        div.mask>div{
+            width: 800px;
+            height: 300px;
+            padding: 160px;
+            margin: 150px auto;
+            background: rgba(100,150,100,0.3);
+            font-size: 20px;
+            box-sizing:content-box; 
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Car Dealer</title>
+	<link rel="stylesheet" href="dealer.css" type="text/css" />
+	<script type="text/javascript" src="JQuery/jquery-2.1.1.js"></script>
+<script type="text/javascript" src="JQuery/jquery-ui.js"></script>
+
+    <script type="text/javascript" language="javascript" src="dealer4.js"></script>
+</head>
+
+<body>
+	<div id="salon">
+    	<div id="clients_queue" style="overflow: auto;">
+            <!-- 右边的购买人员 -->
+        	clients queue
+        </div>
+    	<div id="cars_place" >
+        	<div id="porsche" class="place" data-mas="$99,999.00" data-sum="4" data-html="Place for Porsche cars">
+			Place for Porsche cars
+            </div>
+        	<div id="volkswagen" class="place" data-mas="$99,999.00" data-sum="6" data-html="Place for Porsche cars">
+			Place for Volkswagen cars
+            </div>
+        	<div id="audi" class="place" data-mas="$99,999.00" data-sum="4" data-html="Place for Porsche cars">
+			Place for Audi cars
+            </div>
+        	<div id="bmw" class="place" data-mas="$99,999.00" data-sum="5" data-html="Place for Porsche cars">
+			Place for BMW cars
+            </div>
+        </div>
+        <div id="cashier">
+        	cashier
+        </div>
+        <div id="exit">
+        	exit
+        </div>
+        <div id="display">
+            <!-- 用于浏览数，买出的车辆，交易成功的总金额 -->
+        	<ul>
+            	<li id="clients_served">10 clients</li>
+				<li id="cars_sold">10 cars</li>
+                <li id="amount">€ 120.000,00</li>
+            </ul>    
+        </div>
+    </div>
+    <div class="mask" style="display: none;">
+            <div>
+                <p>Do you want to buy this car?</p>
+                <button>yes</button>
+                <button>no</button>
+            </div>
+        </div>
+    <style>
+        div.mask{
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top:0;
+            left: 0;
+            /*background: rgba();*/
+        }
+        div.mask>div{
+            width: 800px;
+            height: 300px;
+            padding: 160px;
+            margin: 150px auto;
+            background: #ccc;
+            font-size: 20px;
+            box-sizing:content-box; 
+        }
+    </style>
+</body>
+</html>

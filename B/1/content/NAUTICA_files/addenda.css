@@ -1,0 +1,18 @@
+/*
+ * NOTE: to be appended to main site CSS in the min-cat project
+ */
+
+#footer .emphasized, 
+#footer a:link.emphasized, #footer a:visited.emphasized {
+    color: #0F2135;
+    font: bold 11px Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+#footer #footerEmailSignup a:link.emphasized {
+    display: block;
+    margin-top: 8px;
+}
+
+#footer #globalFooter #footerStoreLocator h3 {
+    margin: 10px 0 5px;
+}

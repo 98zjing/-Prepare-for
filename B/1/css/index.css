@@ -1,0 +1,354 @@
+#contentman{
+	width: 100%;
+}
+header{
+	width: 100%;
+	background: rgba(0,0,0,0.6);
+	position: fixed;
+	height: 30px;
+	z-index: 999;
+}
+.header{
+	width: 850px;
+	height: 30px;
+	margin: 0 auto;
+	font-size: 10px;
+}
+.header ul.navLeft a li,
+.header ul.navRight a li{
+	margin: 0 10px;
+	color: #fff;
+	line-height: 30px;
+	font-size: 12px;
+}
+.header ul.navRight a li .yellow{
+	color: yellow;
+}
+.header ul.navLeft a li::before{
+	content: "";
+	display: inline-block;
+	width: 4px;
+	height: 4px;
+	border-radius: 5px;
+	border:2px solid #fff; 
+	float: left;
+	margin-top: 11px;
+	margin-right: 3px;
+}
+.navLeft{
+	width: 65%;
+}
+.navRight{
+	width: 35%;
+}
+.content{
+	position: relative;
+	width: 100%;
+	top: 30px;
+}
+.nav{
+	position: absolute;
+	width: 100%;
+	top: 10px;
+	left: 0;
+	line-height: 40px;
+	z-index: 999;
+}
+.nav ul{
+	width: 850px;
+	margin: 0 auto;
+	height: 40px;
+}
+.nav ul a li{
+	height: 100%;
+	margin-right: 15px;
+	color: #fff;
+	font-size: 16px;
+}
+.banner{
+	position: relative;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: url("../images/bg.png");
+	overflow: hidden;
+}
+.banner::before{
+	position: absolute;
+	top: 191px;
+	left: 50%;
+	content: "";
+	width: 100%;
+	height: 450px;
+	background: url("../images/shadow.png") no-repeat;
+}
+.banner::after{
+	position: absolute;
+	top: 191px;
+	left: 80%;
+	content: "";
+	width: 100%;
+	height: 450px;
+	background: url("../images/shadow.png") no-repeat;
+}
+.bannerImg{
+	position: relative;
+	width: 100%;
+	height: 450px;
+}
+.bannerImg>.bannerBox{
+	position: absolute;
+	width: 400%;
+	height: 100%;
+}
+.bannerImg>.bannerBox a li{
+	width: 25%;
+	height: 100%;
+	overflow: hidden;
+}
+.bannerImg>.bannerBox a li img{
+	position: relative;
+	z-index: 99;
+	margin-top:97px;
+	margin-left: 60%; 
+}
+.bannerBtn{
+	position: absolute;
+	bottom: 0px;
+	left: 0;
+	width: 100%;
+	height: 40px;
+	background: rgba(0,0,0,0.5);
+	text-align: center;
+	line-height: 40px;
+	z-index: 999;
+}
+.bannerBtn ul{
+	height: 100%;
+}
+.bannerBtn ul a li{
+	display: inline-block;
+	font-size: 0;
+	width: 10px;
+	height: 10px;
+	border-radius: 5px;
+	background: #fff;
+	margin-right: 5px;
+}
+.Cable{
+	position: absolute;
+	width: 100%;
+	top:80%;
+	z-index: 999;
+}
+.Cable>.CableBtn{
+	width: 850px;
+	margin: 0 auto;
+}
+.Cable>.CableBtn>input{
+	display: block;
+	width: 200px;
+	background:#fff;
+	height: 35px;
+	border:none;
+	line-height: 35px;
+	padding: 0;
+	padding-left: 10px;
+}
+.Cable>.CableBtn>button{
+	display: block;
+	height: 35px;
+	width: 50px;
+	line-height: 35px;
+	text-align: center;
+	padding: 0;
+	background: red;
+	border:none;
+	color: #fff;
+	cursor: pointer;
+}
+.text{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform:translate(-50%,-50%);
+}
+.textOne{
+	font-size: 100px;
+	color: yellow;
+}
+.textTwo{
+	font-size: 36px;
+	color: yellow;
+}
+.textSex{
+	margin:0;
+	padding: 0;
+	font-size: 12px;
+	color: #fff;
+	line-height: 24px;
+}
+.brand{
+	position: absolute;
+	width: 100%;
+	top: 80px;
+	z-index: 999;
+}
+.brand div{
+	width: 850px;
+	margin: 0 auto;
+}
+.list{
+	position: relative;
+	width: 850px;
+	top: 50px;
+	padding-top: 20px;
+	margin: 0 auto;
+}
+.list .listLeft{
+	width: 30%;
+	height: 700px;
+	padding-right: 5%;
+}
+.list .listRight{
+	width: 70%;
+	height: 700px;
+}
+.list .listLeft ul{
+	padding-top:10px;
+}
+.list .listLeft ul div{
+	background: #fafafa;
+	height: 20px;
+	line-height: 20px;
+	border-bottom: 1px solid #ccc;
+}
+.list .listLeft ul div::before{
+	content: "";
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	border-radius: 10px;
+	float: right;
+	margin-top: 3px;
+	margin-right: 4px;
+	background: #fff;
+	border: 4px solid #666;
+}
+.list .listLeft ul div h3{
+	margin:0;
+	padding: 0;
+	font-size: 14px;
+	font-weight: normal;
+	background: #ccc;
+}
+.list .listLeft ul a li{
+	padding-right:-20px; 
+	line-height: 24px;
+	color:#000;
+}
+.listRH{
+	width: 100%;
+}
+.newRH{
+	width: 100%;
+	line-height: 40px;
+	border-bottom: 1px solid #ccc;
+}
+.listRH .listBanner{
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+.listRH h2{
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	color: #E69818FF;
+}
+.listRH  .listBanner ul{
+	position: relative;
+	width: 100%;
+}
+.listRH .listBanner ul.listBannerList{
+	padding: 20px 0 50px 0;
+}
+.listRH ul.listBannerList a li{
+	position: relative;
+	display: inline-block;
+	width: 33.33%;
+	height: auto;
+	padding: 20px;
+}
+.listRH .listBanner ul.listBannerList a li div.listRHLeft{
+	position: absolute;
+}
+.listRH .listBanner ul.listBannerList a li div.listRHLeft h1{
+	font-size: 20px;
+	margin: 0;
+	padding: 5px;
+	color: red;
+}
+.listRH .listBanner ul.listBannerList a li div.listRHLeft p{
+	margin: 0;
+	padding: 0;
+	font-size: 8px;
+	line-height: 18px;
+}
+.introduce{
+	width: 100%;
+	margin-top: -10px;
+}
+.introduce .buy{
+	float: right;
+	font-size: 14px;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border-radius: 25px;
+	color: #fff;
+	background:#3F497FFF ;
+	margin-top: -15px;
+	margin-right: 0px;
+}
+.introduce p{
+	margin: 0;
+	padding: 0;
+	font-size: 10px;
+	color: #444;
+	line-height: 12px;
+}
+.bannerImgs{
+	float: right;
+	width: 70%;
+}
+.bannerImgs img{
+	width: 100%;
+	height: auto;
+}
+.listBannerBtn{
+	width: 100%;
+	text-align: center;
+	margin-top: -50px;
+	display: none;
+}
+.listBannerBtn li{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius: 6px;
+	border: 1px solid #ccc;
+}
+.menu{
+	position: fixed;
+	z-index: 999;
+	top: 70%;
+	right: 1%;
+	width: 50px;
+	display: none;
+}
+.menu a img{
+	width: 80%;
+	height: auto;
+}
